@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name: "Joe Elias"
+  name: "Joe Elias (he/him/his)"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "Applied Conservation Ecology, Ph.D. Student, Binghamton University"
   location: "Binghamton, NY, USA"
@@ -122,7 +122,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:jelias4@binghamton.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
