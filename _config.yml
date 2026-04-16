@@ -120,6 +120,9 @@ author:
   email:
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
+    - label: "CV"
+      icon: "far fa-fw fa-file-pdf"
+      url: "/assets/files/CV.pdf"
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"
       url: "mailto:jelias4@binghamton.edu"
