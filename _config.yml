@@ -224,6 +224,8 @@ kramdown:
 
 # Sass/SCSS
 sass:
+  sass_dir: _sass
+  style: compressed
   custom_css: assets/css/custom.css
 
 # Outputting
