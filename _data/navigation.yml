@@ -8,8 +8,8 @@ main:
     url: /teaching/
   - title: "Publications"
     url: /publications/
-  -title: "People"
-    url:/people/
+  - title: "People"
+    url: /people/
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
