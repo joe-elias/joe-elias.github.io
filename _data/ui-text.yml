@@ -29,7 +29,7 @@ en: &DEFAULT_EN
   related_label: "You may also enjoy"
   follow_label: "Follow:"
   feed_label: "Feed"
-  powered_by: "Powered by"
+  powered_by: ""
   website_label: "Website"
   email_label: "Email"
   recent_posts: <i class="fa-solid fa-crow"></i>
@@ -349,7 +349,7 @@ it: &DEFAULT_IT
   related_label: "Potrebbe Piacerti Anche"
   follow_label: "Segui:"
   feed_label: "Feed"
-  powered_by: "Powered by"
+  powered_by: ""
   website_label: "Website"
   email_label: "Email"
   recent_posts: "Articoli Recenti"
