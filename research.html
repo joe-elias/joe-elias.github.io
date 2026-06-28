@@ -5,6 +5,16 @@ author_profile: true
 classes: wide
 ---
 
+<div id="fun-fact-box" style="
+    background:#f0f7ff;
+    border-left:4px solid #2a6f97;
+    padding:12px 16px;
+    margin:20px 0;
+    font-size:1.05em;
+">
+    <strong>Fun Fact:</strong> <span id="fun-fact"></span>
+</div>
+
 <h2><span style="font-size: 40px;">🦗</span> Restoring a Historical Multi‑decade Time Series of Nocturnal Passive Acoustic Monitoring</h2>
 
 <p>Bioacoustics—the study of sound production within ecosystems—enables researchers to efficiently track ecological change 
@@ -98,3 +108,19 @@ densities to a minimal territory size of 150 ha suggested that suitable cavities
 Cavity abundance was likely a consequence of beech bark disease complex having recently top-killed most large American Beech trees 
 locally, providing abundant resources for excavating woodpeckers. 
 
+<script>
+const facts = [
+    "fun fact 1",
+    "fun fact 2",
+    "fun fact 3",
+    "fun fact 4",
+    "fun fact 5"
+];
+
+function showRandomFact() {
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+    document.getElementById("fun-fact").textContent = fact;
+}
+
+showRandomFact();
+</script>
