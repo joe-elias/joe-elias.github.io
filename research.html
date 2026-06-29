@@ -23,13 +23,29 @@ bioacoustics remains underutilized for insects.</p>
 
 <img src="/assets/images/spectrogram.png" alt="spect" style=width:900px; margin: 1 0 1rem 1rem;>
 
-<button onclick="document.getElementById('sample-audio').play()">
+
+<button id="audio-btn" onclick="toggleAudio()">
   ▶ Listen to a sample call
 </button>
 
 <audio id="sample-audio">
-  <source src="/assets/audio/soundscape.wav" type="audio/mpeg">
+  <source src="/assets/audio/soundscape.wav" type="audio/wav">
 </audio>
+
+<script>
+function toggleAudio() {
+  const audio = document.getElementById('sample-audio');
+  const btn = document.getElementById('audio-btn');
+
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏸ Pause sample";
+  } else {
+    audio.pause();
+    btn.textContent = "▶ Listen to a sample call";
+  }
+}
+</script>
 
 <p>Orthoptera play essential roles in nutrient cycling, food‑web support, and bioindication. Declines at an estimated 
 rate of 2.1–2.7% per year in Orthoptera abundance threaten these ecosystem services, yet they remain far less 
