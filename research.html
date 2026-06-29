@@ -17,17 +17,17 @@ classes: wide
 
 <h2><span style="font-size: 40px;">🦗</span> Restoring a Historical Multi‑decade Time Series of Nocturnal Passive Acoustic Monitoring</h2>
 
-<p>Bioacoustics—the study of sound production within ecosystems—enables researchers to efficiently track ecological change 
-by measuring the natural communication signals produced by wildlife. Although widely used for studying birds, 
+<p>Bioacoustics is the study of sound production within ecosystems. It enables researchers to efficiently track ecological change 
+by measuring the natural communication signals produced by animals. Although widely used for studying birds, 
 bioacoustics remains underutilized for insects.</p>
 
 <img src="/assets/images/spectrogram.png" alt="spect" style=width:900px; margin: 1 0 1rem 1rem;>
 
 <p>Orthoptera play essential roles in nutrient cycling, food‑web support, and bioindication. Declines at an estimated 
 rate of 2.1–2.7% per year in Orthoptera abundance threaten these ecosystem services, yet they remain far less 
-studied than most other insect groups. One major barrier to routine passive acoustic 
+studied than most other taxa. One major barrier to routine passive acoustic 
 monitoring (PAM) of sound‑producing insects is the scarcity of recordings collected under natural field conditions which is 
-crucial for rapid and standardized species identification. I am working to restore and analyze a historical PAM dataset 
+crucial for rapid and standardized species identification. We are working to restore and analyze a historical PAM dataset 
 totaling ~7,000 hours (25 years) of consistent soundscape recordings replicated across eight sites. This project involves 
 digitizing and restoring nine years of analog cassette recordings, conducting audio analysis and annotation, and customizing a Convolutional Neural 
 Network (CNN) to automate species detection. The resulting dataset will be used to infer long-term trends in Orthoptera biodiversity 
@@ -37,8 +37,9 @@ and potential environmental drivers of change.</p>
 
 <img src="/assets/images/gis.png" alt="gis" style="float:right; width: 400px; margin: 0 0 1rem 1rem;">
 
-<p>Monitoring networks are vital for tracking change within and between ecosystems. However, many monitoring networks have bias
-introduced at the research design phase which can skew inference. I am developing an algorithmic approach to quantify and
+<p>Monitoring networks are vital for tracking change within and between ecosystems, but standardization and consistency is key. 
+Monitoring networks can have bias introduced at the research design phase which can skew inference. 
+We are developing an algorithmic approach to quantify and
 account for bias during site selection under common geographic and environmental constraints for
 representative ecological monitoring initiatives. </p>
 
@@ -47,7 +48,7 @@ representative ecological monitoring initiatives. </p>
 <p>The method can be used to establish new site networks as well as update and 
 quantify the optimization of existing networks to help better understand the resulting data. 
 This method uses GIS data and GIS tools in R (mostly terra and sf) that are typically 
-open access. To help others apply my the method, I have developed an R package, 
+open access. To help others apply our method, we've developed an R package, 
 <a href="https://github.com/joe-elias/siteselectr" target="_blank">siteselectr</a>, which can 
 be downloaded via my github with its vignette, or using devtools::install_github(). Accompanying 
 the R package is a GUI option for the general application of this method developed as a ShinyApp.</p>
@@ -65,7 +66,7 @@ banding.</p>
 
 <img src="/assets/images/ftir.png" alt="ftir" style="float:right; width: 500px; margin: 0 0 1rem 1rem;">
 
-<p>We found that bird banding with diet analysis was a comparable non‑lethal approach to achieve larger datasets for immediate micrplastic ingestion.
+<p>We found that bird banding with diet analysis was a comparable non‑lethal approach to achieve larger datasets for monitoring immediate microplastic ingestion.
 The GI tract results suggest long‑term retention in these species. We found that MP loads are more influenced by 
 fine-scale local variation on individuals rather than ecological characteristics like diet or foraging strategy, or morphological variation 
 like body size. This research is currently in review—stay tuned! For more information on the influence and trajectories of microplastics in
@@ -87,7 +88,7 @@ mediating microplastic–organism interactions across aquatic communities that u
 
 <img src="/assets/images/nswo.jpg" alt="owl" style="float:right; width: 300px; margin: 0 0 1rem 1rem;">
 
-Aegolius acadicus (Northern Saw-whet Owl) is an ecologically important, nocturnal, cryptic species that utilizes forests in Pennsylvania for 
+Aegolius acadicus (Northern Saw-whet Owl) is an ecologically important, nocturnal, cryptic species that uses forests in Pennsylvania for 
 stopover habitat, wintering, and breeding. The extent to which this species nests in the mixed-deciduous forests of northeastern 
 Pennsylvania is uncertain. We used passive acoustic monitoring (PAM) and audio playbacks throughout a reclaimed state park in northeastern PA to 
 assess potential breeding chronology and habitat-use patterns. We found that Saw-whet Owls vocalized at 60% of passive acoustic monitoring stations
@@ -101,7 +102,7 @@ research adds to a growing body of research that Saw-whet Owls have more breedin
 Occupancy by Northern Saw-Whet Owls.</h2>
 
 <img src="/assets/images/nestbox.jpg" alt="box" style="float:right; width: 250px; margin: 0 0 1rem 1rem;">
-Nest boxes are commonly used for species that utilize tree cavities, including small owls. We checked boxes set out for Northern Saw-whet Owls
+Nest boxes are commonly used for secondary nesters, including small owls. We checked boxes set out for Northern Saw-whet Owls
 after a hiatus of 8 years and found 3 rodent nests, but no evidence of owl usage. Playbacks revealed owls were present at 8 of 11 
 boxes checked. Cavity surveys yielded an average of 7.7 large cavities within 50 m of each box; extrapolation of cavity 
 densities to a minimal territory size of 150 ha suggested that suitable cavities are an abundant, non-limiting resource here. 
@@ -116,7 +117,7 @@ const facts = [
     "Orthopterans are very sensitive to environmental change. This makes them useful for tracking environmental change and understanding how those changes might impact other animals.",
     "Only a small percentage of Orthoptera are agricultural pests. Many other Orthopterans provide necessary contributions to trophic support, nutrient cycling, and entomophagy.",
     "It is estimated that humans are consuming thousands of microplastics per year. They've even been found in the human brain! :)",
-    "Northern saw-whet owls are secondary nesters. They seek out used cavities left by larger woodpeckers to build their nests.",
+    "Northern saw-whet owls are secondary nesters. They seek out used cavities left by large woodpeckers to build their nests.",
     "Northern saw-whet owls cache extra food during the winter to create frozen meals. They incubate the frozen prey later to eat.",
     "The U.S. spends billions reacting to environmental problems each year. Establishing long-term monitoring networks can detect issues years earlier which saves governments and industries enormous costs. For instance, networks that detect early warning conditions of algal blooms can save millions of dollars in tourism, fisheries, and public health.",
     "Optimizing site selection can decrease monitoring efforts and costs by up to 50% but produce similar results.",
