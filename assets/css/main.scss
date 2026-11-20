@@ -6,4 +6,25 @@ search: false
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+// Optional: widen the sidebar so the avatar can be bigger (delete these two lines to keep the default width)
+$right-sidebar-width: 240px;
+$right-sidebar-width-narrow: 240px;
+
 @import "minimal-mistakes"; // main partials
+
+/* Square author avatar */
+.author__avatar img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0;       /* delete this line to keep it round */
+}
+
+/* Larger avatar on desktop, where the sidebar sits beside the content */
+@media (min-width: 64em) {
+  .author__avatar img {
+    width: 100%;
+    max-width: 100%;
+    object-position: center 20%;   /* shifts the crop toward the top so faces aren't cut off */
+  }
+}
