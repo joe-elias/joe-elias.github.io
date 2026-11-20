@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin: "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale: "en-US"
@@ -115,7 +115,7 @@ analytics:
 author:
   name: "Joe Elias"
   avatar: "/assets/images/profile.jpg"
-  bio: "Applied Conservation Ecology, Ph.D. Student, Binghamton University"
+  bio: "Applied Conservation Science, Ph.D. Student, Binghamton University"
   location: "Binghamton, NY, USA"
   email:
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag

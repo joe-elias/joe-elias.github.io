@@ -133,25 +133,26 @@ densities to a minimal territory size of 150 ha suggested that suitable cavities
 Cavity abundance was likely a consequence of beech bark disease complex having recently top-killed most large American Beech trees 
 locally, providing abundant resources for excavating woodpeckers. 
 
+<p id="fun-fact"></p>
+<button onclick="showRandomFact()">Another fact</button>
+
 <script>
 const facts = [
     "Most cricket ears (tympana) are on their knees, not on their heads.",
-    "Like birds, each stridulating species of Orthoptera creates a unique mating call. Some similar‑looking species can only be identified through their calls.",
-    "Orthopterans are very sensitive to their environment. This makes them useful for tracking environmental change and understanding how those changes might impact other animals.",
-    "Only a small percentage of Orthoptera are agricultural pests. Many other Orthopterans provide necessary contributions to trophic support, nutrient cycling, and entomophagy.",
+    "Like birds, each stridulating species of Orthoptera creates a unique mating 'song'. Some similar‑looking species can only be identified through their songs.",
+    "Orthopterans are very sensitive to their environment. This makes them useful for tracking environmental change and understanding how those changes might impact the entire ecosystem",
+    "Like other insects that get a bad rap (e.g., wasps, ants, mosquitoes), only a small percentage of Orthoptera are pests. Many other Orthopterans provide necessary contributions to trophic support, nutrient cycling, and entomophagy.",
     "It is estimated that humans ingest thousands of microplastics per year. They've even been found in the human brain! :)",
-    "Northern saw-whet owls are secondary nesters. They seek out used cavities left by large woodpeckers to build their nests.",
-    "Northern saw-whet owls cache extra food during the winter to create "microwaveable" frozen meals. They incubate the frozen prey later to eat",
+    "Northern saw-whet owls are secondary nesters, meaning they don't actually build their nests. Instead, they operate by squatters rights, and seek out used cavities left by large woodpeckers.",
+    'Northern saw-whet owls cache extra food during the winter to create "microwaveable" frozen meals. They incubate the frozen prey later to eat.',
     "Optimizing site selection can decrease monitoring efforts and costs by up to 50% and produce similar results to traditional methods of network design.",
-    "Moths are unsung heroes when it comes to pollination. In some instances, nocturnal moths can visit more flowers during the night than bees can visit during the day.",
-    "Some moths have an intense escape behavior. When they detect a predators (bats), they will pull out a series of dives and turns to throw the predator off its path (<i>Serpentine, Serpentine!!</i> - The In-Laws).",
-    "Bird poop is incredibly useful for science. Using fecal analysis scientists can tell what a bird ate and when, including their exposure to environmental pollution.",
+    "Moths are unsung heroes when it comes to pollination. In some instances, nocturnal moths pollinate more flowers during the night than bees can visit during the day.",
+    "Some moths have an intense escape behavior. When they detect a predator (bats), they will pull out a series of dives and turns to throw the predator off its path (<i>Serpentine, Serpentine!!</i> - Peter Falk in The In-Laws).",
+    "Poop is incredibly useful for science. Using fecal analysis scientists can tell what an animal ate and when, including their exposure to environmental pollution."
 ];
 function showRandomFact() {
     const fact = facts[Math.floor(Math.random() * facts.length)];
     document.getElementById("fun-fact").innerHTML = fact;
 }
-
-showRandomFact();
+document.addEventListener("DOMContentLoaded", showRandomFact);
 </script>
-
