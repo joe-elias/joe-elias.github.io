@@ -158,9 +158,24 @@ const facts = [
     "Some moths have an intense escape behavior. When they detect a predator (bats), they will pull out a series of dives and turns to throw the predator off its path (<i>Serpentine, Serpentine!!</i> - Peter Falk in The In-Laws).",
     "Poop is incredibly useful for science. Using fecal analysis scientists can tell what an animal ate and when, including their exposure to environmental pollution."
 ];
-function showRandomFact() {
-    const fact = facts[Math.floor(Math.random() * facts.length)];
-    document.getElementById("fun-fact").innerHTML = fact;
+
+function showNextFact() {
+    let index;
+    try {
+        const saved = localStorage.getItem("factIndex");
+        if (saved === null) {
+            // First visit: start at a random fact
+            index = Math.floor(Math.random() * facts.length);
+        } else {
+            // Later visits: move to the next fact, wrapping around
+            index = (parseInt(saved, 10) + 1) % facts.length;
+        }
+        localStorage.setItem("factIndex", index);
+    } catch (e) {
+        // localStorage unavailable (private mode, etc.): fall back to random
+        index = Math.floor(Math.random() * facts.length);
+    }
+    document.getElementById("fun-fact").innerHTML = facts[index];
 }
-document.addEventListener("DOMContentLoaded", showRandomFact);
+document.addEventListener("DOMContentLoaded", showNextFact);
 </script>
