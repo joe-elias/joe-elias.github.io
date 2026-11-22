@@ -7,8 +7,29 @@ show_content: true
 classes: wide
 ---
 
+<style>
+  .float-right-img {
+    float: right;
+    width: 300px;
+    max-width: 40%;
+    margin: 0 0 1rem 1rem;
+  }
+  .float-right-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .float-right-img {
+      float: none;
+      max-width: 100%;
+      margin: 0 0 1rem 0;
+    }
+  }
+</style>
+
 <h2>About</h2>
-<figure style="float: right; width: 300px; margin: 0 0 1rem 1rem;">
+<figure class="float-right-img">
   <img src="/assets/images/indie_solo.jpg" alt="indie_solo" style="width: 100%; display: block;">
 </figure>
 
@@ -56,7 +77,7 @@ classes: wide
     undeniable how utterly important insects are for every ecosystem, and they often experience many of the 
     same and more conservation problems as birds but with so much less attention. And they are pretty awesome too!
 </p>
-<img src="/assets/images/moth_cricket1.png" alt="cricket" style="float:right; width: 200px; margin: 0 0 1rem 1rem; filter: brightness(0) invert(1);">  
+<img src="/assets/images/poly_moth.jpg" alt="cricket" style="float:right; width: 300px; margin: 0 0 1rem 1rem; filter: brightness(0) invert(1);">  
 <p>    
     My search for large-scale conservation action and collaborative monitoring initiatives brought me to The Grames Lab in 2024. 
     Since then we've been working to improve large-scale moth biodiversity monitoring, computational modeling approaches to decrease bias in 
